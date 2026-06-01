@@ -162,6 +162,8 @@
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .destination-card-image {
@@ -217,6 +219,12 @@
   color: var(--text-muted);
   line-height: 1.7;
   margin-bottom: 24px;
+}
+
+.destination-card .button {
+  padding: 10px 20px;
+  font-size: 14px;
+  align-self: center;
 }
 
 /* Popular Destinations */
