@@ -208,3 +208,14 @@ form .button-primary {
   padding: 80px 24px 60px;
   margin-top: 60px;
 }
+
+@media (max-width: 768px) {
+  .feedback-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feedback-form,
+  .faq-section {
+    padding: 24px;
+  }
+}

@@ -1,10 +1,26 @@
+// Toast notification
+function showNotify(msg, type) {
+    const existing = document.getElementById('_toast');
+    if (existing) existing.remove();
+    const toast = document.createElement('div');
+    toast.id = '_toast';
+    toast.textContent = msg;
+    const bg = type === 'error' ? 'var(--danger)' : 'var(--success)';
+    toast.style.cssText = `position:fixed;bottom:24px;left:50%;transform:translateX(-50%);
+        background:${bg};color:#fff;padding:12px 22px;border-radius:10px;
+        font-size:14px;font-weight:600;z-index:9999;
+        box-shadow:0 4px 20px rgba(0,0,0,0.2);white-space:nowrap;pointer-events:none;`;
+    document.body.appendChild(toast);
+    setTimeout(() => toast.remove(), 3000);
+}
+
 // Newsletter
 function newsletter(e) {
     e.preventDefault();
     const input = e.target.querySelector('input[type="email"]');
     const email = input.value.trim();
     if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        showNotity ('Please enter a valid email address.', 'error');
+        showNotify('Please enter a valid email address.', 'error');
         return;
     }
     const emails = JSON.parse(localStorage.getItem('newsletters') || '[]');

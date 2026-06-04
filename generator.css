@@ -268,3 +268,50 @@
   padding: 80px 24px 60px;
   margin-top: 60px;
 }
+
+@media (max-width: 768px) {
+  .generator-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .generator-result {
+    min-height: auto;
+  }
+
+  .result-placeholder {
+    height: 180px;
+    font-size: 15px;
+  }
+
+  .generator-controls {
+    padding: 24px;
+  }
+
+  .result-img {
+    height: 220px;
+  }
+
+  .result-body {
+    padding: 20px;
+  }
+
+  .result-name {
+    font-size: 24px;
+  }
+
+  .wishlist {
+    flex-direction: column;
+  }
+
+  .wishlist-button,
+  .wishlist .surprise-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .wishlist-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

@@ -316,3 +316,30 @@
   padding: 80px 24px 60px;
   margin-top: 60px;
 }
+
+@media (max-width: 768px) {
+  .explorer-hero {
+    padding: 40px 0 32px;
+  }
+
+  .explorer-filter {
+    gap: 10px;
+  }
+
+  .filter-reset {
+    width: 100%;
+  }
+
+  .destination-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 16px;
+  }
+
+  .destination-explorer-card-body {
+    padding: 14px;
+  }
+
+  .destination-explorer-card-name {
+    font-size: 15px;
+  }
+}

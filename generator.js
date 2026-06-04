@@ -29,6 +29,10 @@ function generatetrip() {
 
     document.getElementById('resultplaceholder').style.display = 'none';
     document.getElementById('resultContent').style.display = 'block';
+
+    if (window.innerWidth <= 768) {
+        document.getElementById('generatorResult').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
 }
 
 function saveGeneratedToWishlist() {

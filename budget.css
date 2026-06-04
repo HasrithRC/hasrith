@@ -298,3 +298,33 @@
   padding: 80px 24px 60px;
   margin-top: 60px;
 }
+
+@media (max-width: 768px) {
+  .budget-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .budget-form,
+  .budget-result {
+    padding: 24px;
+  }
+
+  .budget-button {
+    flex-direction: column;
+  }
+
+  .budget-button .button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .budget-total-amount {
+    font-size: 36px;
+  }
+
+  .saved-trip-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

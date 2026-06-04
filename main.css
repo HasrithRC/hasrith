@@ -70,6 +70,8 @@ a {
   overflow: hidden;
   border: none;
   background: transparent;
+  cursor: pointer;
+  min-height: 44px;
 }
 
 .button::after {
@@ -446,6 +448,23 @@ input,select,textarea {
     display: none;
   }
 
+  .section-header {
+    margin-bottom: 32px;
+  }
+
+  .budget-body,
+  .generator-body,
+  .mood-body,
+  .feedback-body,
+  .explorer-body {
+    padding: 40px 0;
+  }
+
+  .destination-of-the-day,
+  .popular-destinations {
+    padding: 48px 0;
+  }
+
   .nav-hamburger {
     display: flex;
   }
@@ -482,6 +501,34 @@ input,select,textarea {
   .news-letter form {
     width: 100%;
   }
+
+  .modal-overlay {
+    padding: 12px;
+  }
+
+  .modal-body {
+    padding: 20px;
+  }
+
+  .modal-title {
+    font-size: 22px;
+  }
+
+  .modal-img {
+    height: 180px;
+  }
+
+  .modal-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .modal-table th,
+  .modal-table td {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -499,6 +546,17 @@ input,select,textarea {
   }
 
   .search-box button {
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .news-letter form {
+    flex-direction: column;
+  }
+
+  .news-letter input,
+  .news-letter button {
+    width: 100%;
     border-radius: 10px;
   }
 }
