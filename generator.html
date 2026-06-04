@@ -51,23 +51,37 @@
                 <div class="generator-controls">
                     <h3>Customize Your Trip</h3>
                     <div class="form-group">
-                        <label for="travelType" class="form-label">Travel Type</label>
-                        <select id="travelType" class="form-input">
-                            <option value="">Any Type</option>
-                            <option value="Cultural">Cultural</option>
-                            <option value="Adventure">Adventure</option>
-                            <option value="Relaxation">Relaxation</option>
-                            <option value="Entertainment">Entertainment</option>
-                        </select>
+                        <label class="form-label">Travel Type</label>
+                        <div class="custom-select" id="travelTypeWrapper">
+                            <button type="button" class="custom-select-btn" id="travelTypeBtn">
+                                <span class="custom-select-label">Any Type</span>
+                                <span class="custom-select-arrow">▾</span>
+                            </button>
+                            <ul class="custom-select-list" id="travelTypeList">
+                                <li data-value="">Any Type</li>
+                                <li data-value="Cultural">Cultural</li>
+                                <li data-value="Adventure">Adventure</li>
+                                <li data-value="Relaxation">Relaxation</li>
+                                <li data-value="Entertainment">Entertainment</li>
+                            </ul>
+                        </div>
+                        <input type="hidden" id="travelType" value="">
                     </div>
                     <div class="form-group">
-                        <label for="budgetRange" class="form-label">Budget Range</label>
-                        <select id="budgetRange" class="form-input">
-                            <option value="">Any Budget</option>
-                            <option value="low">Low</option>
-                            <option value="mid">Medium</option>
-                            <option value="high">High</option>
-                        </select>
+                        <label class="form-label">Budget Range</label>
+                        <div class="custom-select" id="budgetRangeWrapper">
+                            <button type="button" class="custom-select-btn" id="budgetRangeBtn">
+                                <span class="custom-select-label">Any Budget</span>
+                                <span class="custom-select-arrow">▾</span>
+                            </button>
+                            <ul class="custom-select-list" id="budgetRangeList">
+                                <li data-value="">Any Budget</li>
+                                <li data-value="low">Low</li>
+                                <li data-value="mid">Medium</li>
+                                <li data-value="high">High</li>
+                            </ul>
+                        </div>
+                        <input type="hidden" id="budgetRange" value="">
                     </div>
                     <button class="surprise-button" id="surpriseButton" onclick="generatetrip()">Surprise Me!</button>
                 </div>

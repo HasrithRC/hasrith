@@ -209,6 +209,12 @@ form .button-primary {
   margin-top: 60px;
 }
 
+@media (max-width: 1024px) {
+  .feedback-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 768px) {
   .feedback-grid {
     grid-template-columns: 1fr;

@@ -68,4 +68,6 @@ function removeWishlist(id) {
   renderWishlist();
 }
 
+initCustomSelect('travelTypeWrapper', 'travelType');
+initCustomSelect('budgetRangeWrapper', 'budgetRange');
 renderWishlist();

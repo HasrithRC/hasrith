@@ -6,10 +6,13 @@ let explorerInited = false;
 function explorer() {
     if (!explorerInited) {
         explorerInited = true;
+        initCustomSelect('continentFilterWrapper', 'continentFilter', function () {
+            filterDestinations();
+        });
     }
     const pending = localStorage.getItem('pending_search');
     if (pending && document.getElementById('searchDestination')) {
-        document.getElementById ('searchDestination').value = pending;
+        document.getElementById('searchDestination').value = pending;
         localStorage.removeItem('pending_search');
     }
     filterDestinations();
@@ -27,9 +30,10 @@ function filterDestinations() {
     renderExplorer();
 }
 
-function resetFilter () {
+function resetFilter() {
     document.getElementById('searchDestination').value = '';
     document.getElementById('continentFilter').value = '';
+    resetCustomSelect('continentFilterWrapper', 'All Continents');
     filterDestinations();
 }
 

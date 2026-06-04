@@ -48,15 +48,22 @@
                     <input type="text" id="searchDestination" placeholder="Search destinations..." oninput="filterDestinations()">
                     <button>🔍</button>
                 </div>
-                <select id="continentFilter" class="filter-select" onchange="filterDestinations()">
-                    <option value="">All Continents</option>
-                    <option>Europe</option>
-                    <option>Asia</option>
-                    <option>North America</option>
-                    <option>South America</option>
-                    <option>Africa</option>
-                    <option>Oceania</option>
-                </select>
+                <div class="custom-select custom-select-dark" id="continentFilterWrapper">
+                    <button type="button" class="custom-select-btn" id="continentFilterBtn">
+                        <span class="custom-select-label">All Continents</span>
+                        <span class="custom-select-arrow">▾</span>
+                    </button>
+                    <ul class="custom-select-list" id="continentFilterList">
+                        <li data-value="">All Continents</li>
+                        <li data-value="Europe">Europe</li>
+                        <li data-value="Asia">Asia</li>
+                        <li data-value="North America">North America</li>
+                        <li data-value="South America">South America</li>
+                        <li data-value="Africa">Africa</li>
+                        <li data-value="Oceania">Oceania</li>
+                    </ul>
+                </div>
+                <input type="hidden" id="continentFilter" value="">
                 <button class="filter-reset" onclick="resetFilter()">Reset</button>
             </div>
         </div>

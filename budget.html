@@ -52,11 +52,16 @@
                     <h3>Plan Your Trip</h3>
                     <form id="budgetForm" onsubmit="calculatBudget(event)">
                         <div class="form-group">
-                            <label for="budgetDest" class="form-label">Destination</label>
-                            <select id="budgetDest" class="form-input">
-                                <option value="">Select a destination...</option>
-                            </select>
-                            <div class="form-error" id="errDest"> Please select a destination.</div>
+                            <label class="form-label">Destination</label>
+                            <div class="custom-select" id="budgetDestWrapper">
+                                <button type="button" class="custom-select-btn" id="budgetDestBtn">
+                                    <span class="custom-select-label">Select a destination...</span>
+                                    <span class="custom-select-arrow">▾</span>
+                                </button>
+                                <ul class="custom-select-list" id="budgetDestList"></ul>
+                            </div>
+                            <input type="hidden" id="budgetDest" value="">
+                            <div class="form-error" id="errDest">Please select a destination.</div>
                         </div>
                         <div class="form-group">
                             <label for="budgetDays" class="form-label">Number of Days</label>
