@@ -45,7 +45,6 @@ function submitFeedback(e) {
 
     document.getElementById('feedbackSuccess').classList.add('show');
     document.getElementById('feedbackForm').reset();
-    showNotify('📨 Message sent!', 'success');
     setTimeout(() => document.getElementById('feedbackSuccess').classList.remove('show'), 5000);
 }
 
