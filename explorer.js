@@ -21,7 +21,7 @@ function explorer() {
 function filterDestinations() {
     const q = (document.getElementById('searchDestination')?.value || '').toLowerCase();
     const cont = document.getElementById('continentFilter')?.value ||'';
-    filterDestination = destinations.filter(d => {
+    filterdestination = destinations.filter(d => {
         const matchQ = !q || d.name.toLowerCase().includes(q) || d.country.toLowerCase().includes(q);
         const matchC = !cont || d.continent === cont;
         return matchQ && matchC;
@@ -39,7 +39,7 @@ function resetFilter() {
 
 function renderExplorer() {
     const start = (explorerPage - 1) * PER_PAGE;
-    const paged = filterDestination.slice(start, start + PER_PAGE);
+    const paged = filterdestination.slice(start, start + PER_PAGE);
     const grid = document.getElementById('destinationGrid');
     const noResult = document.getElementById('noResult');
 
@@ -62,7 +62,7 @@ function renderExplorer() {
 }
 
 function renderPagination() {
-    const total = Math.ceil(filterDestination.length / PER_PAGE);
+    const total = Math.ceil(filterdestination.length / PER_PAGE);
     const pg = document.getElementById('pagination');
     if (total <= 1) { pg.innerHTML = ''; return;}
     let html = '';
