@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +8,12 @@
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
     <!-- Navigation bar -->
     <header>
         <nav class="navbar">
             <h2 class="logo"><a href="index.html">
-                    <i class="fa-solid fa-plane-departure"></i> Travel <span>Nest</span></a></h2>
+                <i class="fa-solid fa-plane-departure"></i> Travel <span>Nest</span></a></h2>
             <ul class="nav-links">
                 <li><a href="index.html" class="nav-link active">Home</a></li>
                 <li><a href="explorer.html" class="nav-link">Explorer</a></li>
@@ -62,7 +60,7 @@
     </section>
     <!-- Destination of the day -->
     <section class="destination-of-the-day">
-        <div class="container">
+         <div class="container">
             <div class="section-header">
                 <h2 id="heading">Destination of the Day</h2>
                 <p>Updated every day — discover somewhere new</p>
@@ -77,8 +75,7 @@
                 <h3 class="name" id="name">Loading...</h3>
                 <div class="country" id="country"></div>
                 <p class="desc" id="desc"></p>
-                <button class=" button button-primary" onclick="filterByDotd(); navigateTo('explorer')">Explore
-                    Now</button>
+                <button class=" button button-primary" onclick="filterByDotd(); navigateTo('explorer')">Explore Now</button>
             </div>
         </div>
     </section>
@@ -98,10 +95,9 @@
         <div class="container">
             <div class="footer-logo">
                 <h2 class="logo"><a href="index.html">
-                        <i class="fa-solid fa-plane-departure"></i> Travel <span>Nest</span></a></h2>
+                <i class="fa-solid fa-plane-departure"></i> Travel <span>Nest</span></a></h2>
                 <div>
-                    <p>Explore More. Experience More. Your ultimate travel companion for discovering the world's most
-                        breathtaking destinations.</p>
+                    <p>Explore More. Experience More. Your ultimate travel companion for discovering the world's most breathtaking destinations.</p>
                 </div>
             </div>
             <div class="footer-links">
@@ -115,9 +111,9 @@
             </div>
             <div class="news-letter">
                 <p>Subscribe to get special offers and travel tips!</p>
-                <label for="email">Email Address</label>
                 <form onsubmit="newsletter(event)">
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter your email" required>
                     <button type="submit">Subscribe</button>
                 </form>
             </div>
@@ -156,5 +152,4 @@
     <script src="home.js"></script>
     <script src="explorer.js"></script>
 </body>
-
 </html>
