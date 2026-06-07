@@ -407,6 +407,10 @@ input,select,textarea {
   white-space: nowrap;
 }
 
+.news-letter label {
+  display: none;
+}
+
 .news-letter button:hover {
   background: var( --danger);
 }

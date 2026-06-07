@@ -23,9 +23,9 @@
                 <li><a href="feedback.html" class="nav-link">Support</a></li>
             </ul>
             <button class="nav-hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span>-</span>
+                <span>-</span>
+                <span>-</span>
             </button>
         </nav>
         <div class="nav-mobile-menu" id="mobileMenu">
@@ -43,6 +43,7 @@
             <h1 class="hero-title">Discover Your<br> Next Adventure</h1>
             <p class="hero-subtitle">Plan, explore and make memories.</p>
             <div class="search-box">
+                <label for="heroSearch">Search Destinations:</label>
                 <input type="text" id="heroSearch" placeholder="Search destinations...">
                 <button onclick="heroSearch()">Search</button>
             </div>
@@ -111,6 +112,7 @@
             <div class="news-letter">
                 <p>Subscribe to get special offers and travel tips!</p>
                 <form onsubmit="newsletter(event)">
+                    <label for="email">Email</label>
                     <input type="email" placeholder="Enter your email" required>
                     <button type="submit">Subscribe</button>
                 </form>
@@ -125,7 +127,7 @@
                 <button class="modal-close" onclick="closeModal()">✕</button>
             </div>
             <div class="modal-body">
-                <h2 class="modal-title" id="modalTitle"></h2>
+                <h2 class="modal-title" id="modalTitle">Title</h2>
                 <div class="modal-country" id="modalCountry"></div>
                 <p id="modalDestination"></p>
                 <h3>Popular Attractions</h3>
