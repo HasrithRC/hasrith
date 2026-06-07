@@ -23,9 +23,9 @@
                 <li><a href="feedback.html" class="nav-link">Support</a></li>
             </ul>
             <button class="nav-hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span>-</span>
+                <span>-</span>
+                <span>-</span>
             </button>
         </nav>
         <div class="nav-mobile-menu" id="mobileMenu">
@@ -92,7 +92,7 @@
                     <div id="resultContent">
                         <img src="" alt="Generated destination" class="result-img" id="resultImg">
                         <div class="result-body">
-                            <h2 class="result-name" id="resultName"></h2>
+                            <h2 class="result-name" id="resultName">Result</h2>
                             <div class="result-country" id="resultCountry"></div>
                             <p class="result-desc" id="resultDesc"></p>
                             <div class="result-meta" id="resultMeta"></div>
@@ -135,6 +135,7 @@
             <div class="news-letter">
                 <p>Subscribe to get special offers and travel tips!</p>
                 <form onsubmit="newsletter(event)">
+                    <label for="email">Email</label>
                     <input type="email" placeholder="Enter your email" required>
                     <button type="submit">Subscribe</button>
                 </form>
