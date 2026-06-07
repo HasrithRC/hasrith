@@ -103,6 +103,10 @@
   border: 1px solid var(--border);
 }
 
+.tracker-form label {
+  display: none;
+}
+
 .dest-list {
   list-style: none;
   display: flex;

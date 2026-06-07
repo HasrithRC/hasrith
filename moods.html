@@ -23,9 +23,9 @@
                 <li><a href="feedback.html" class="nav-link">Support</a></li>
             </ul>
             <button class="nav-hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span>-</span>
+                <span>-</span>
+                <span>-</span>
             </button>
         </nav>
         <div class="nav-mobile-menu" id="mobileMenu">
@@ -70,6 +70,7 @@
                 <h3>Destination Tracker</h3>
                 <p>Keep a simple list of places to visit. Mark destinations as planned or visited.</p>
                 <form id="trackerForm" onsubmit="addDestination(event)" class="tracker-form">
+                    <label for="destInput">Add a destination</label>
                     <input id="destInput" type="text" placeholder="Add a destination" required>
                     <button type="submit" class="button button-primary">Add</button>
                 </form>
@@ -99,6 +100,7 @@
             <div class="news-letter">
                 <p>Subscribe to get special offers and travel tips!</p>
                 <form onsubmit="newsletter(event)">
+                    <label for="email">Email</label>
                     <input type="email" placeholder="Enter your email" required>
                     <button type="submit">Subscribe</button>
                 </form>
