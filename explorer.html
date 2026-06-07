@@ -23,9 +23,9 @@
                 <li><a href="feedback.html" class="nav-link">Support</a></li>
             </ul>
             <button class="nav-hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span>-</span>
+                <span>-</span>
+                <span>-</span>
             </button>
         </nav>
         <div class="nav-mobile-menu" id="mobileMenu">
@@ -84,7 +84,7 @@
                 <button class="modal-close" onclick="closeModal()">✕</button>
             </div>
             <div class="modal-body">
-                <h2 class="modal-title" id="modalTitle"></h2>
+                <h2 class="modal-title" id="modalTitle">Title</h2>
                 <div class="modal-country" id="modalCountry"></div>
                 <p id="modalDestination"></p>
                 <h4>Popular Attractions</h4>
@@ -126,6 +126,7 @@
             <div class="news-letter">
                 <p>Subscribe to get special offers and travel tips!</p>
                 <form onsubmit="newsletter(event)">
+                    <label for="email">Email</label>
                     <input type="email" placeholder="Enter your email" required>
                     <button type="submit">Subscribe</button>
                 </form>
