@@ -21,9 +21,13 @@
   display: flex;
   gap: 12px;
   align-items: center;
-  flex-wrap: wrap;
-  max-width: 700px;
+  max-width: 900px;
   margin: 32px auto 0;
+}
+
+.explorer-filter .custom-select {
+  width: 200px;
+  flex-shrink: 0;
 }
 
 .explorer-search {
@@ -324,6 +328,11 @@
 
   .explorer-filter {
     gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .explorer-filter .custom-select {
+    width: 100%;
   }
 
   .filter-reset {
