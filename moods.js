@@ -45,7 +45,7 @@ function getDestinations() {
   }
 }
 
-function saveDestinations(list) {
+function saveDestination(list) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
 }
 
