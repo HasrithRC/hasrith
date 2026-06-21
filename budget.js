@@ -4,7 +4,7 @@ function budget() {
         destinations.forEach(d => {
             const li = document.createElement('li');
             li.textContent = d.name + ', ' + d.country;
-            li.dataset.value = d.name;
+            li.dataset.values = d.name;
             list.appendChild(li);
         });
     }
