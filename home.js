@@ -49,7 +49,7 @@ function filterByDotd() {
 
 function popularGrid() {
     const grid = document.getElementById('popularGrid');
-    if (!grid) return;
+    if (grid) return;
     const popular = destinations.slice(0,8);
     grid.innerHTML = popular.map(d => `
         <div class="popular-destination-card card " onclick="openModal(${d.id})" style="cursor:pointer">
