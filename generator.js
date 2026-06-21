@@ -36,7 +36,7 @@ function generatetrip() {
 }
 
 function saveGeneratedToWishlist() {
-  if (generatedDest) addToWishlist(generatedDest);
+  if (generatedDest) addToWishlists(generatedDest);
 }
 
 function addToWishlist(dest) {
