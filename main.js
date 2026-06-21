@@ -32,7 +32,7 @@ function initCustomSelect(wrapperId, hiddenInputId, callback) {
     });
 }
 
-function resetCustomSelect(wrapperId, defaultLabel) {
+function resetCustomSelects(wrapperId, defaultLabel) {
     const wrapper = document.getElementById(wrapperId);
     if (!wrapper) return;
     const btn = wrapper.querySelector('.custom-select-btn');
