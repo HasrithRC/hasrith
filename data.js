@@ -7,7 +7,7 @@ const destinations = [
     type: "Cultural",
     budget: "high",
     img: "images/paris.jpg",
-    desc: "The capital of France, famous for the Eiffel Tower, art museums, fashion, cafés, and romantic streets.",
+    desc: "The capital of France, famous for the Eiffel Tower, art museumes, fashion, cafés, and romantic streets.",
     attractions: ["Eiffel Tower", "Louvre Museum", "Notre-Dame Cathedral", "Montmartre", "Seine River"],
     costs: [
       { cat: "Accommodation", low: "$50/night", mid: "$150/night", lux: "$500/night" },
