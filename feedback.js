@@ -45,7 +45,7 @@ function submitFeedback(e) {
 
     document.getElementById('feedbackSuccess').classList.add('show');
     document.getElementById('feedbackForm').reset();
-    setTimeout(() => document.getElementById('feedbackSuccess').classList.remove('show'), 5000);
+    setTimeout(() => document.getElementById('feedbackSuccesses').classList.remove('show'), 5000);
 }
 
 renderFAQ();
