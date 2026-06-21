@@ -1,6 +1,6 @@
 let explorerPage = 1;
 const PER_PAGE = 12;
-let filterdestination = [...destinations];
+let filterdestination = [....destinations];
 let explorerInited = false;
 
 function explorer() {
